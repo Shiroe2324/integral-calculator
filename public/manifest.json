@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Calculadora Integrales",
+  "short_name": "Calculadora",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "description": "Calculadora de integrales para integrales definidas e indefinidas de funciones trigonométricas, exponenciales, logarítmicas, y más.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": {
+    "icon1": {
+      "src": "icons/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "16x16 32x32"
+    },
+    "icon2": {
+      "src": "icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    "icon3": {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    "icon4": {
+      "src": "icons/icon-192-maskable.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    "icon5": {
+      "src": "icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  }
+}

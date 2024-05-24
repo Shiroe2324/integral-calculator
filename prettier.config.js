@@ -1,0 +1,15 @@
+export default {
+  bracketSpacing: true,
+  importOrder: ['<THIRD_PARTY_MODULES>', '^@.+$', '^@.+/.*$', '^[./]'],
+  importOrderSeparation: true,
+  importOrderCaseInsensitive: true,
+  importOrderSortSpecifiers: true,
+  jsxSingleQuote: true,
+  plugins: ['prettier-plugin-tailwindcss', '@trivago/prettier-plugin-sort-imports'],
+  printWidth: 125,
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  tailwindConfig: './tailwind.config.js',
+  trailingComma: 'all',
+};
