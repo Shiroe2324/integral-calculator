@@ -1,6 +1,7 @@
-import react from '@vitejs/plugin-react-swc';
-import tsconfigPaths from 'vite-tsconfig-paths'
 import { defineConfig } from 'vite';
+import tsconfigPaths from 'vite-tsconfig-paths';
+
+import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -10,5 +11,10 @@ export default defineConfig({
     // Alternatively, we could add `<script>window.global = window;</script>` to index.html.
     // https://github.com/vitejs/vite/discussions/5912
     global: {},
+  },
+  build: {
+    rollupOptions: {
+      external: [/^nerdamer\/*/],
+    },
   },
 });

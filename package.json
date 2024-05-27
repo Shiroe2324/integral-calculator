@@ -10,7 +10,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx,mjs,cjs,ts,tsx}\" --config ./prettier.config.js",
     "lint": "eslint . --max-warnings 0",
     "lint:fix": "eslint . --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "nerdamer": "^1.1.13",
