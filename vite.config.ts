@@ -12,9 +12,4 @@ export default defineConfig({
     // https://github.com/vitejs/vite/discussions/5912
     global: {},
   },
-  build: {
-    rollupOptions: {
-      external: [/^nerdamer\/*/],
-    },
-  },
 });

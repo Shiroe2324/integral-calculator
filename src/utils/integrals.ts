@@ -1,6 +1,5 @@
 import type { Expression } from 'nerdamer';
 import nerdamer from 'nerdamer';
-import 'nerdamer/calculus';
 
 export function texToString(expression: string): string {
   try {
