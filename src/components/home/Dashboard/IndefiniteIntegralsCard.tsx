@@ -8,16 +8,18 @@ import { paths } from '@/~routes';
 
 const IndefiniteIntegralsCard: React.FC = () => {
   return (
-    <Card className='bg-secondary w-100 border-primary' side='sm'>
+    <Card className='w-100 border-primary' side='sm'>
       <Card.Image src={indefinite} alt='Integrales Definidas' />
       <Card.Body>
-        <h2 className='text-2xl font-semibold text-secondary-content flex items-center'>
+        <h2 className='text-2xl font-semibold flex items-center'>
           <span>Integrales Indefinidas</span> <TbQuestionMark />
         </h2>
 
-        <p className='text-secondary-content'>Calcula integrales indefinidas de forma sencilla.</p>
+        <p>Calcula integrales indefinidas de forma sencilla.</p>
         <Link to={paths.indefiniteIntegrals}>
-          <Button className='bg-base-300 border-base-100 w-full'>Ir a las integrales indefinidas</Button>
+          <Button className='w-full' color='primary'>
+            Ir a las integrales indefinidas
+          </Button>
         </Link>
       </Card.Body>
     </Card>

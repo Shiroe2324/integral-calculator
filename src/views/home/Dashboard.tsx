@@ -5,13 +5,13 @@ import IndefiniteIntegralsCard from '@/~home/Dashboard/IndefiniteIntegralsCard';
 
 const Dashboard: React.FC = () => {
   return (
-    <main className='container mx-auto my-10 h-full'>
-      <section className='w-full grid grid-cols-1 gap-10 h-full'>
+    <main className='container mx-auto flex-grow flex flex-col items-center justify-center'>
+      <section className='w-full flex flex-col justify-center gap-5 my-5 md:gap-16 md:my-0'>
         <DefiniteIntegralsCard />
         <IndefiniteIntegralsCard />
       </section>
     </main>
-  );
+  ); 
 };
 
 export default Dashboard;

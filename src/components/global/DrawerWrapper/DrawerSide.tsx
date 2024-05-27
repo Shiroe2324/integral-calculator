@@ -1,37 +1,28 @@
 import React from 'react';
 import { Menu } from 'react-daisyui';
-import { TbCheck, TbQuestionMark } from 'react-icons/tb';
-import { Link } from 'react-router-dom';
 
 import Clock from '@/~global/Clock';
+import DefiniteIntegralsLink from '@/~global/DrawerWrapper/DefiniteIntegralsLink';
+import IndefiniteIntegralsLink from '@/~global/DrawerWrapper/IndefiniteIntegralsLink';
 import ThemeButton from '@/~global/ThemeButton';
-import { paths } from '@/~routes';
 
 const DrawerSide: React.FC = () => {
   return (
-    <Menu className='p-4 w-60 md:w-80 h-full bg-base-200 gap-10'>
-      <div>
+    <Menu className='p-4 w-60 md:w-80 h-full bg-base-200 justify-between'>
+      <nav className='flex flex-col gap-2'>
         <Menu.Item>
-          <Link to={paths.definiteIntegrals} className='btn btn-ghost'>
-            Integrales Definidas
-            <TbCheck />
-          </Link>
+          <DefiniteIntegralsLink />
         </Menu.Item>
         <Menu.Item>
-          <Link to={paths.indefiniteIntegrals} className='btn btn-ghost'>
-            Integrales Indefinidas
-            <TbQuestionMark />
-          </Link>
+          <IndefiniteIntegralsLink />
         </Menu.Item>
-      </div>
-      <div>
-        <div className='flex justify-center'>
-          <Clock />
-        </div>
-        <Menu.Item className='flex justify-center'>
-          <ThemeButton />
+      </nav>
+      <footer className='flex flex-col items-center gap-2'>
+        <Clock />
+        <Menu.Item className='flex items-center w-full'>
+          <ThemeButton className='w-full' />
         </Menu.Item>
-      </div>
+      </footer>
     </Menu>
   );
 };

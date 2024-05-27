@@ -6,8 +6,14 @@ import { useNavigate } from 'react-router-dom';
 const PageNotFound: React.FC = () => {
   const navigate = useNavigate();
 
+  const isFirstPage = () => window.history.length <= 1;
+
   const handleClick = () => {
-    navigate(-1);
+    if (isFirstPage()) {
+      navigate('/');
+    } else {
+      navigate(-1);
+    }
   };
 
   return (
@@ -16,7 +22,7 @@ const PageNotFound: React.FC = () => {
       <h1 className='text-4xl text-base-content font-bold mb-4'>404 - Página no Encontrada</h1>
       <p className='text-lg text-base-content'>Lo sentimos, la página que estás buscando no existe.</p>
       <Button onClick={handleClick} color='primary' className='mt-4'>
-        Regresar a la página anterior
+        {isFirstPage() ? 'Ir al Inicio' : 'Regresar a la página anterior'}
       </Button>
     </main>
   );

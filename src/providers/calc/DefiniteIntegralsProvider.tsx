@@ -28,7 +28,10 @@ const DefiniteIntegralsProvider: React.FC<DefiniteIntegralsProviderProps> = ({ c
 
   const handleSubmit = () => {
     try {
-      const integral = definiteIntegral(texToString(expression), 'x', texToString(lowerLimit), texToString(upperLimit));
+      const parsedExpression = !expression ? '1' : texToString(expression);
+      const parsedLowerLimit = !lowerLimit ? '1' : texToString(lowerLimit);
+      const parsedUpperLimit = !upperLimit ? '1' : texToString(upperLimit);
+      const integral = definiteIntegral(parsedExpression, 'x', parsedLowerLimit, parsedUpperLimit);
       setError('');
       setResult(integral.toTeX());
     } catch (error) {

@@ -18,7 +18,8 @@ const IndefiniteIntegralsProvider: React.FC<IndefiniteIntegralsProviderProps> = 
 
   const handleSubmit = () => {
     try {
-      const integral = indefiniteIntegral(texToString(expression), 'x');
+      const parsedExpression = !expression ? '1' : texToString(expression);
+      const integral = indefiniteIntegral(parsedExpression, 'x');
       setError('');
       setResult(integral.toTeX());
     } catch (error) {
