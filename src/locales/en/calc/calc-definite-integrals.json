@@ -1,0 +1,43 @@
+{
+  "title": "Definite Integral Calculator",
+  "error-card": {
+    "title": "Error",
+    "message": "An error occurred while calculating the integral.",
+    "copy": {
+      "label": "Copy",
+      "message": "Error copied to clipboard."
+    }
+  },
+  "expression-form": {
+    "expression": {
+      "label": "Function to integrate",
+      "placeholder": "Enter a mathematical expression"
+    },
+    "lower-limit": {
+      "label": "Lower limit",
+      "placeholder": "Enter the lower limit"
+    },
+    "upper-limit": {
+      "label": "Upper limit",
+      "placeholder": "Enter the upper limit"
+    },
+    "submit": "Calculate"
+  },
+  "success-card": {
+    "result": {
+      "title": "Result",
+      "copy": {
+        "label": "Copy",
+        "message": "Result copied to clipboard."
+      }
+    },
+    "explanation": {
+      "title": "Explanation",
+      "message": "The explanation is not available.",
+      "copy": {
+        "label": "Copy",
+        "message": "Explanation copied to clipboard."
+      }
+    }
+  }
+}

@@ -1,11 +1,12 @@
 import React from 'react';
 import { Button } from 'react-daisyui';
+import { useTranslation } from 'react-i18next';
 import { FaTriangleExclamation } from 'react-icons/fa6';
 import { useNavigate } from 'react-router-dom';
 
 const PageNotFound: React.FC = () => {
+  const { t } = useTranslation('others-page-not-found');
   const navigate = useNavigate();
-
   const isFirstPage = () => window.history.length <= 1;
 
   const handleClick = () => {
@@ -17,12 +18,12 @@ const PageNotFound: React.FC = () => {
   };
 
   return (
-    <main className='flex flex-col items-center justify-center flex-grow'>
+    <main className='flex flex-grow flex-col items-center justify-center'>
       <FaTriangleExclamation size={100} className='mb-4 text-warning' />
-      <h1 className='text-4xl text-base-content font-bold mb-4'>404 - Página no Encontrada</h1>
-      <p className='text-lg text-base-content'>Lo sentimos, la página que estás buscando no existe.</p>
+      <h1 className='mb-4 text-4xl font-bold text-base-content'>{t('title')}</h1>
+      <p className='text-lg text-base-content'>{t('description')}</p>
       <Button onClick={handleClick} color='primary' className='mt-4'>
-        {isFirstPage() ? 'Ir al Inicio' : 'Regresar a la página anterior'}
+        {isFirstPage() ? t('return-button.home') : t('return-button.previous')}
       </Button>
     </main>
   );

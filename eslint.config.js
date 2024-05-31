@@ -1,8 +1,9 @@
-import pluginJs from '@eslint/js';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginReactConfig from 'eslint-plugin-react/configs/recommended.js';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
+
+import pluginJs from '@eslint/js';
 
 export default [
   {

@@ -1,0 +1,9 @@
+{
+  "title": "Calculadora de Integrales",
+  "definite-integrals-link": "Integrales Definidas",
+  "indefinite-integrals-link": "Integrales Indefinidas",
+  "language-button": {
+    "english": "Inglés",
+    "spanish": "Español"
+  }
+}

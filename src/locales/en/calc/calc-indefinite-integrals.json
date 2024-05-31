@@ -1,0 +1,33 @@
+{
+  "title": "Indefinite Integral Calculator",
+  "error-card": {
+    "title": "Error",
+    "message": "An error occurred while calculating the integral.",
+    "copy": {
+      "label": "Copy",
+      "message": "Error copied to clipboard."
+    }
+  },
+  "expression-form": {
+    "placeholder": "Enter a mathematical expression",
+    "label": "Function to integrate",
+    "submit": "Calculate"
+  },
+  "success-card": {
+    "result": {
+      "title": "Result",
+      "copy": {
+        "label": "Copy",
+        "message": "Result copied to clipboard."
+      }
+    },
+    "explanation": {
+      "title": "Explanation",
+      "message": "The explanation is not available.",
+      "copy": {
+        "label": "Copy",
+        "message": "Explanation copied to clipboard."
+      }
+    }
+  }
+}

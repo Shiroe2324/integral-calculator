@@ -28,8 +28,8 @@ const DefiniteIntegralsProvider: React.FC<DefiniteIntegralsProviderProps> = ({ c
 
   const handleSubmit = () => {
     try {
-      const parsedExpression = !expression ? '1' : texToString(expression);
-      const parsedLowerLimit = !lowerLimit ? '1' : texToString(lowerLimit);
+      const parsedExpression = !expression ? 'Infinity' : texToString(expression);
+      const parsedLowerLimit = !lowerLimit ? '-Infinity' : texToString(lowerLimit);
       const parsedUpperLimit = !upperLimit ? '1' : texToString(upperLimit);
       const integral = definiteIntegral(parsedExpression, 'x', parsedLowerLimit, parsedUpperLimit);
       setError('');

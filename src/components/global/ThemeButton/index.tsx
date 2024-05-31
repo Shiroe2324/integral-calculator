@@ -22,7 +22,7 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ className = '' }) => {
   }, [isDarkMode, theme]);
 
   return (
-    <label className={`flex justify-center items-center cursor-pointer gap-2 ${className}`}>
+    <label className={`flex cursor-pointer items-center justify-center gap-2 ${className}`}>
       <HiSun size={25} />
       <Toggle checked={isThemeDark} onChange={handleThemeChange} />
       <HiMoon size={25} />

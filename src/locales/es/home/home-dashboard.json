@@ -1,0 +1,12 @@
+{
+  "definite-integrals": {
+    "title": "Integrales Definidas",
+    "info": "Calcula integrales definidas de forma sencilla.",
+    "button": "Ir a las integrales definidas"
+  },
+  "indefinite-integrals": {
+    "title": "Integrales Indefinidas",
+    "info": "Calcula integrales indefinidas de forma sencilla.",
+    "button": "Ir a las integrales indefinidas"
+  }
+}

@@ -8,9 +8,9 @@ const NavbarCenter: React.FC = () => {
   const { toggleVisible } = useDrawer();
 
   return (
-    <nav className='flex-none lg:hidden'>
+    <nav className='flex-none xl:hidden'>
       <Button aria-label='open sidebar' shape='square' color='ghost' onClick={toggleVisible}>
-        <HiMenuAlt2 className='inline-block w-6 h-6 stroke-current' />
+        <HiMenuAlt2 className='inline-block h-6 w-6 stroke-current' />
       </Button>
     </nav>
   );

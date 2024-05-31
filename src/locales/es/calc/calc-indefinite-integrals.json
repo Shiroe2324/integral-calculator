@@ -1,0 +1,33 @@
+{
+  "title": "Calculadora de Integrales Indefinidas",
+  "error-card": {
+    "title": "Error",
+    "message": "Ha ocurrido un error al calcular la integral.",
+    "copy": {
+      "label": "Copiar",
+      "message": "Error copiado al portapapeles."
+    }
+  },
+  "expression-form": {
+    "placeholder": "Introduce una expresión matemática",
+    "label": "Función a integrar",
+    "submit": "Calcular"
+  },
+  "success-card": {
+    "result": {
+      "title": "Resultado",
+      "copy": {
+        "label": "Copiar",
+        "message": "Resultado copiado al portapapeles."
+      }
+    },
+    "explanation": {
+      "title": "Explicación",
+      "message": "No hay explicación disponible",
+      "copy": {
+        "label": "Copiar",
+        "message": "Explicación copiada al portapapeles."
+      }
+    }
+  }
+}

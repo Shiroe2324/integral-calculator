@@ -11,7 +11,7 @@ interface SuccessCardHeaderProps {
 
 const SuccessCardHeader: React.FC<SuccessCardHeaderProps> = ({ title, ButtonOnClick, buttonText, type }) => {
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex items-center justify-between'>
       <h2 className={`text-2xl font-semibold text-${type}-content`}>{title}</h2>
       <Button onClick={ButtonOnClick} size='sm' variant='outline' className={`text-${type}-content`}>
         <FaCopy /> {buttonText}

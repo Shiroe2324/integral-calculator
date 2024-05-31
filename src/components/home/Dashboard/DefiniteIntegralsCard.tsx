@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card } from 'react-daisyui';
+import { useTranslation } from 'react-i18next';
 import { TbCheck } from 'react-icons/tb';
 import { Link } from 'react-router-dom';
 
@@ -7,18 +8,20 @@ import definite from '@/~assets/images/definite.jpg';
 import { paths } from '@/~routes';
 
 const DefiniteIntegralsCard: React.FC = () => {
+  const { t } = useTranslation('home-dashboard');
+
   return (
-    <Card className=' w-100 border-primary' side='sm'>
+    <Card className='w-full border-primary' side='sm'>
       <Card.Image src={definite} alt='Integrales Definidas' />
       <Card.Body>
-        <h2 className='text-2xl font-semibold  flex items-center'>
-          <span>Integrales Definidas</span> <TbCheck />
+        <h2 className='flex items-center text-2xl font-semibold'>
+          <span>{t('definite-integrals.title')}</span> <TbCheck />
         </h2>
 
-        <p>Calcula integrales definidas de forma sencilla.</p>
+        <p>{t('definite-integrals.info')}</p>
         <Link to={paths.definiteIntegrals}>
           <Button className='w-full' color='primary'>
-            Ir a las integrales definidas
+            {t('definite-integrals.button')}
           </Button>
         </Link>
       </Card.Body>

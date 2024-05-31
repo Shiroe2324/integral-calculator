@@ -14,8 +14,8 @@ const DrawerWrapperComponent: React.FC<NavbarWrapperProps> = ({ children }) => {
   const { visible, toggleVisible } = useDrawer();
 
   return (
-    <Drawer open={visible} onClickOverlay={toggleVisible} side={<DrawerSide />}>
-      <div className='flex flex-col h-screen'>
+    <Drawer open={visible} onClickOverlay={toggleVisible} side={<DrawerSide />} className='h-full'>
+      <div className='flex h-full flex-col'>
         <Navbar />
         {children}
       </div>
